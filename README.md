@@ -1,17 +1,20 @@
-# AWS Static Website Deployment
+# Docker: Hello Captain! 🐳
 
-This project demonstrates how to deploy a simple static website on an AWS EC2 instance running Ubuntu and Nginx.
+This is a simple Docker project that prints “Hello, Captain!” when the container is run.
 
-## Steps to Run
+## 🛠 Requirements
 
-1. Launch an EC2 instance (Ubuntu, t2.micro, public IP)
-2. SSH into the instance
-3. Run:
+- Docker installed
+
+## 🚀 How to Run
 
 ```bash
-sudo apt update
-sudo apt install nginx -y
-echo "<h1>Hello from EC2!</h1>" | sudo tee /var/www/html/index.html
+# Build the Docker image
+docker build -t hello-captain .
 
-## Project URL
-https://roadmap.sh/projects/ec2-instance
+# Run the container
+docker run hello-captain
+
+# Project URL
+https://roadmap.sh/projects/basic-dockerfile
+
